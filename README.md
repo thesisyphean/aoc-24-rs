@@ -9,13 +9,5 @@ Some parts of this project's README were inspired by [this README](https://githu
 
 | Day | Code | Stars |
 | --- | ---- | ----- |
-| 1   |      |       |
-
-## ToDo
-
-- [ ] Use a logger
-- [ ] Add colours
-- [ ] All todos from project
-
-## Learnings
+| 1   | [Here](/src/solutions/day_1.rs) | ⭐⭐ |
 

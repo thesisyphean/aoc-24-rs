@@ -10,4 +10,6 @@ Some parts of this project's README were inspired by [this README](https://githu
 | Day | Code | Stars |
 | --- | ---- | ----- |
 | 1   | [Here](/src/solutions/day_1.rs) | ⭐⭐ |
+| 2   |      |       |
+| 3   | [Here](/src/solutions/day_3.rs) | ⭐⭐ |
 

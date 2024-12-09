@@ -5,6 +5,7 @@ use std::path::PathBuf;
 mod solutions;
 
 use solutions::day_1;
+use solutions::day_2;
 use solutions::day_3;
 use solutions::day_5;
 
@@ -16,7 +17,7 @@ struct Args {
         short,
         long,
         default_value_t = 1,
-        value_parser = clap::builder::PossibleValuesParser::new(["1", "3", "5"])
+        value_parser = clap::builder::PossibleValuesParser::new(["1", "2", "3", "5"])
             .map(|s| s.parse::<u8>().unwrap()),
     )]
     day: u8,
@@ -33,6 +34,8 @@ fn main() {
     let (first, second) = match args.day {
         1 => (day_1::solve_first(&input).to_string(),
               day_1::solve_second(&input).to_string()),
+        2 => (day_2::solve_first(&input).to_string(),
+              day_2::solve_second(&input).to_string()),
         3 => (day_3::solve_first(&input).to_string(),
               day_3::solve_second(&input).to_string()),
         5 => (day_5::solve_first(&input).to_string(),

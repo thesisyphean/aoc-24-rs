@@ -13,4 +13,5 @@ Some parts of this project's README were inspired by [this README](https://githu
 | 2   | [Here](/src/solutions/day_2.rs) | ⭐⭐ |
 | 3   | [Here](/src/solutions/day_3.rs) | ⭐⭐ |
 | 5   | [Here](/src/solutions/day_5.rs) | ⭐⭐ |
+| 7   | [Here](/src/solutions/day_7.rs) | ⭐⭐ |
 

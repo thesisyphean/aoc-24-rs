@@ -106,10 +106,4 @@ Prize: X=18641, Y=10279
     fn first_solution() {
         assert_eq!(solve_first(TEST_INPUT), 480);
     }
-
-    #[test]
-    fn second_solution() {
-        // NOTE: There is no second example
-        // assert_eq!(solve_second(TEST_INPUT), -1);
-    }
 }

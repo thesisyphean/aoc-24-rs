@@ -12,7 +12,7 @@ struct Args {
         short,
         long,
         default_value_t = 1,
-        value_parser = clap::builder::PossibleValuesParser::new(["1", "2", "3", "5", "7"])
+        value_parser = clap::builder::PossibleValuesParser::new(["1", "2", "3", "4", "5", "7", "12", "13", "14"])
             .map(|s| s.parse::<u8>().unwrap()),
     )]
     day: u8,
@@ -33,10 +33,18 @@ fn main() {
               solutions::day_2::solve_second(&input).to_string()),
         3 => (solutions::day_3::solve_first(&input).to_string(),
               solutions::day_3::solve_second(&input).to_string()),
+        4 => (solutions::day_4::solve_first(&input).to_string(),
+              solutions::day_4::solve_second(&input).to_string()),
         5 => (solutions::day_5::solve_first(&input).to_string(),
               solutions::day_5::solve_second(&input).to_string()),
         7 => (solutions::day_7::solve_first(&input).to_string(),
               solutions::day_7::solve_second(&input).to_string()),
+        12 => (solutions::day_12::solve_first(&input).to_string(),
+              solutions::day_12::solve_second(&input).to_string()),
+        13 => (solutions::day_13::solve_first(&input).to_string(),
+              solutions::day_13::solve_second(&input).to_string()),
+        14 => (solutions::day_14::solve_first(&input).to_string(),
+              solutions::day_14::solve_second(&input).to_string()),
         _ => panic!("Unsolved day {} allowed by arg parser", args.day),
     };
 
